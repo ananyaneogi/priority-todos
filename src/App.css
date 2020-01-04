@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+body {
+	min-height: 100vh;
+	box-sizing: border-box;
+	border: 10px solid #fde9f1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+	display: flex;
+	align-items: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 90%;
+	margin: 20px auto;
+	flex: 2;
+	padding-top: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-list {
+	background: #f5f5f5;
+	border-radius: 4px;
+	padding: 12px 12px 0;
+	width: 300px;
+	width: 300px;
+	min-height: 56px;
+	margin: 0;
+	list-style-type: none;
 }
 
-.App-link {
-  color: #61dafb;
+.todo {
+	background: #fff;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+	padding: 12px 12px;
+	font-size: 15px;
+	margin-bottom: 12px;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo span {
+	word-break: break-all;
+	padding: 0 8px;
+	text-align: left;
+	flex-grow: 1;
+}
+
+input {
+	border: 2px solid #595959;
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	line-height: 1;
+	padding: 8px 0 8px 10px;
+	outline: 0;
+	font-size: 18px;
+	margin: 6px 0 20px;
+	width: 300px;
+}
+
+.button-reset {
+	border: 0;
+	box-shadow: none;
+	background: white;
+	padding: 0;
+	cursor: pointer;
+}
+
+h1 {
+	/* text-align: center; */
+	color: #f199d2;
+	font-size: 3rem;
+	max-width: 100%;
+	padding: 40px;
+	margin: 0;
+	text-shadow: 0.1rem -0.1rem #5ff2fa, -0.2rem 0.2rem #f9f62f;
+	flex: 1;
+	padding-right: 0;
+}
+
+h1 small {
+	display: block;
+	color: #595959;
+	font-size: 1rem;
+	margin-top: 16px;
+	text-shadow: none;
+}
+
+details {
+	padding: 60px;
+	flex: 1;
+	padding-left: 0;
+}
+
+summary {
+	padding: 20px;
+	background-color: #f5f5f5;
+	border: 2px solid #f5f5f5;
+	outline: none;
+}
+
+summary:hover,
+summary:focus {
+	border: 2px solid #fbe9f1;
+}
+
+details[open] summary {
+	background-color: #fbe9f1;
+	border: 2px solid #fbe9f1;
+}
+
+details[open] {
+	background: #fff;
+}
+
+@media (max-width: 992px) {
+	main {
+		flex-direction: column;
+	}
+
+	details {
+		width: 90%;
+		margin: 20px auto;
+		padding: 0;
+	}
+	h1 {
+		padding: 20px;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.app {
+		padding: 20px 0 30px;
+	}
 }
