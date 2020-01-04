@@ -10,5 +10,4 @@ more. You can also re-arrange incomplete tasks according to your
 priority. **The goal of this app is to let you mindfully choose
 what tasks to focus on that are actually important!**
 
-### Development
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is hosted on [Netlify](https://netlify.com)
