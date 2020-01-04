@@ -61,6 +61,7 @@ function App() {
 	};
 
 	return (
+        <>
 		<main>
 			<h1>
 				Priority Todos
@@ -105,6 +106,10 @@ function App() {
 			</DragDropContext>
             <About/>
 		</main>
+        <footer>
+            Made by <a href="https://twitter.com/_ananyaneogi">Ananya.</a> Code on <a href="https://github.com/ananyaneogi/priority-todos">github.</a>
+        </footer>
+        </>
 	);
 }
 export default App;

@@ -4,6 +4,12 @@ body {
 	border: 10px solid #fde9f1;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 main {
 	display: flex;
 	align-items: flex-start;
@@ -115,6 +121,18 @@ details[open] summary {
 
 details[open] {
 	background: #fff;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    background-color: #fde9f1;
+    padding-top: 10px;
+}
+
+footer a {
+    color: #c3315b;
+    text-decoration: none;
 }
 
 @media (max-width: 992px) {
